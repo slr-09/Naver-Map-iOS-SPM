@@ -24,7 +24,8 @@ let package = Package(
             path: "./Frameworks/NMapsGeometry.xcframework"
         ),
         .target(
-            name: "NaverMapSDK"),
+            name: "NaverMapSDK",
+            dependencies: ["NMapsMap", "NMapsGeometry"]),
         .testTarget(
             name: "NaverMapSDKTests",
             dependencies: ["NMapsMap", "NMapsGeometry"]),
