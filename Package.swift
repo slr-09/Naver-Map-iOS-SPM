@@ -27,6 +27,6 @@ let package = Package(
             name: "NaverMapSDK"),
         .testTarget(
             name: "NaverMapSDKTests",
-            dependencies: ["NaverMapSDK"]),
+            dependencies: ["NMapsMap", "NMapsGeometry"]),
     ]
 )
